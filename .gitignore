@@ -1,0 +1,8 @@
+# .gitignore ファイル
+!.gitignore
+# 既存のエントリ...
+*/__pycache__/*
+# .envファイルを無視
+.env
+data/*
+!data/.gitkeep

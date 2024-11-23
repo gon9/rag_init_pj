@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "rag-init-pj"
+version = "0.1.0"
+description = ""
+authors = ["gon9a <atsushi.tmail@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+gradio = "^5.6.0"
+openai = "^1.55.0"
+langchain = "^0.3.7"
+langchain-community = "^0.3.7"
+tiktoken = "^0.8.0"
+python-dotenv = "^1.0.1"
+faiss-cpu = "^1.9.0.post1"
+langchain-openai = "^0.2.9"
+pypdf = "^5.1.0"
+pdfplumber = "^0.11.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app:main"
