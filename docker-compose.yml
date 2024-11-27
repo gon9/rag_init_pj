@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rag_app:
+    build: .
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    command: poetry run python src/app.py

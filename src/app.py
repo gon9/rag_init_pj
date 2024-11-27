@@ -73,8 +73,5 @@ iface = gr.Interface(
     title="ToyotaマニュアルQAシステム"
 )
 
-def main():
-    iface.launch()
-
 if __name__ == "__main__":
-    main()
+    iface.launch(server_name="0.0.0.0")

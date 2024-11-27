@@ -12,8 +12,8 @@ def create_qa_chain(vectorstore, openai_api_key):
 
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
-        chain_type="map_reduce",
-        retriever=vectorstore.as_retriever()#search_kwargs={"k": 10})
+        chain_type="stuff", #"map_reduce"
+        retriever=vectorstore.as_retriever(search_kwargs={"k": 2}) # default 4
     )
     return qa_chain
 
